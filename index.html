@@ -1,8 +1,9 @@
 <html>
     <head>
-    <meta http-equiv='cache-control' content='no-cache'> 
-    <meta http-equiv='expires' content='0'> 
-    <meta http-equiv='pragma' content='no-cache'>
+      <meta http-equiv='cache-control' content='no-cache'>
+      <meta http-equiv='expires' content='0'>
+      <meta http-equiv='pragma' content='no-cache'>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -10,47 +11,82 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
       <title>Tokyo Tonight</title>
-      <link rel="icon" href="media/example-logo.png">
+      <link rel="icon" href="media/logo-32x32.png">
       <link rel="stylesheet" href="style.css">
     </head>
     <body>
       <div id="full-nav">
         <nav>
-          <img id="nav-logo" src="media/example-logo.png">
+          <img id="nav-logo" src="media/logo.png">
           <ul>
-            <li class="nav-bar-links"><a href="index.html" class="nav-bar-links">HOME</a></li>
-            <li class="nav-bar-links"><a href="past-event.html" class="nav-bar-links">PAST EVENTS</a></li>
-            <li class="nav-bar-links"><a href="upcoming-page.html" class="nav-bar-links">UPCOMING</a></li>
-            <li class="nav-bar-links"><a href="about-page.html" class="nav-bar-links">ABOUT</a></li>
-            <li class="nav-bar-links"><a href="faq-page.html" class="nav-bar-links">FAQ</a></li>
-            <li class="nav-bar-links"><a href="contact-page.html" class="nav-bar-links">CONTACT</a></li>
+            <li class="nav-bar-links"><a href="index.html" class="nav-bar-links"><p>HOME</p><img src="icons/Home.png"></a></li>
+            <li class="nav-bar-links"><a href="past-event.html" class="nav-bar-links"><p>PAST EVENTS</p><img src="icons/Event Declined.png"></a></li>
+            <li class="nav-bar-links"><a href="upcoming-page.html" class="nav-bar-links"><p>UPCOMING</p><img src="icons/Calendar 4.png"></a></li>
+            <li class="nav-bar-links"><a href="about-page.html" class="nav-bar-links"><p>ABOUT</p><img src="icons/About.png"></a></li>
+            <li class="nav-bar-links"><a href="faq-page.html" class="nav-bar-links"><p>FAQ</p><img src="icons/FAQ.png"></a></li>
+            <li class="nav-bar-links"><a href="contact-page.html" class="nav-bar-links"><p>CONTACT</p><img src="icons/Envelope.png"></a></li>
           </ul>
           </nav>
         </div>
-        <div id="landing-carousel">
-          <img id="carousel-1" src="media/carousel-1.png">
+        <div class="slider">
+          <div class="slides">
+            <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+          <img src="media/carousel-1.png" class="img-slides" alt="">
+          </div>
+          <div class="slide">
+            <img src="media/carousel-2.png" class="img-slides" alt="">
+          </div>
+          <div class="slide">
+            <img src="media/carousel-3.png" class="img-slides" alt="">
+          </div>
+          <div class="slide">
+            <img src="media/carousel-4.png" class="img-slides" alt="">
+          </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--automatic navigation end-->
         </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <!--image slider end-->
+
         <div id="landing-tagline">
           <h2 id="tagline">夜は浅い</h2>
         </div>
-        <div class="landing-boxes">
-          <div class="text">
-            <h1>GRAB YOUR TICKETS!</h1>
-            <p>Get ready and grab your invitation to the lower mainlands biggest J-Pop themed event! </p>
-            <button class="box-link">BUY TICKETS NOW</button>
+        <div id="container">
+          <div class="landing-boxes">
+            <div class="text">
+              <h1>GRAB YOUR TICKETS!</h1>
+              <p>Get ready and grab your invitation to the lower mainlands biggest J-Pop themed event! </p>
+              <button class="box-link">BUY TICKETS NOW</button>
+            </div>
           </div>
-          <div class="image">
-            <img class="landing-image" src="media/landing-box-image-1.png">
-          </div>
-        </div>
-        <div class="landing-boxes">
-          <div class="text">
-            <h1>CHECK OUT WHAT YOU MISSED!</h1>
-            <p>SEE OUR PAST EVENTS FOR ALL THE FUN THAT YOU MISSED! IT’S OK THOUGH YOU CAN MAKE IT UP ;)</p>
-            <button class="box-link">LOCATIONS</button>
-          </div>
-          <div class="image">
-            <img class="landing-image" src="media/landing-box-image-2.png">
+          <div class="landing-boxes">
+            <div class="text">
+              <h1>CHECK OUT WHAT YOU MISSED!</h1>
+              <p>SEE OUR PAST EVENTS FOR ALL THE FUN THAT YOU MISSED! IT’S OK THOUGH YOU CAN MAKE IT UP ;)</p>
+              <button class="box-link">LOCATIONS</button>
+            </div>
           </div>
         </div>
         <footer id="footer">
@@ -75,4 +111,14 @@
             </div>
           </div>
         </footer>
+        <script type="text/javascript">
+          var counter = 1;
+          setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+              counter = 1;
+            }
+          }, 3000);
+    </script>
     </body>

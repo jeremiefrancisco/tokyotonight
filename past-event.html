@@ -1,5 +1,12 @@
 <html>
     <head>
+      <meta http-equiv='cache-control' content='no-cache'>
+      <meta http-equiv='expires' content='0'>
+      <meta http-equiv='pragma' content='no-cache'>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -7,46 +14,74 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
       <title>Tokyo Tonight</title>
-      <link rel="icon" href="media/example-logo.png">
+      <link rel="icon" href="media/logo-32x32.png">
       <link rel="stylesheet" href="style.css">
     </head>
     <body>
       <div id="full-nav">
         <nav>
-          <img id="nav-logo" src="media/example-logo.png">
+          <img id="nav-logo" src="media/logo.png">
           <ul>
-            <li class="nav-bar-links"><a href="index.html" class="nav-bar-links">HOME</a></li>
-            <li class="nav-bar-links"><a href="past-event.html" class="nav-bar-links">PAST EVENTS</a></li>
-            <li class="nav-bar-links"><a href="upcoming-page.html" class="nav-bar-links">UPCOMING</a></li>
-            <li class="nav-bar-links"><a href="about-page.html" class="nav-bar-links">ABOUT</a></li>
-            <li class="nav-bar-links"><a href="faq-page.html" class="nav-bar-links">FAQ</a></li>
-            <li class="nav-bar-links"><a href="contact-page.html" class="nav-bar-links">CONTACT</a></li>
+            <li class="nav-bar-links"><a href="index.html" class="nav-bar-links"><p>HOME</p><img src="icons/Home.png"></a></li>
+            <li class="nav-bar-links"><a href="past-event.html" class="nav-bar-links"><p>PAST EVENTS</p><img src="icons/Event Declined.png"></a></li>
+            <li class="nav-bar-links"><a href="upcoming-page.html" class="nav-bar-links"><p>UPCOMING</p><img src="icons/Calendar 4.png"></a></li>
+            <li class="nav-bar-links"><a href="about-page.html" class="nav-bar-links"><p>ABOUT</p><img src="icons/About.png"></a></li>
+            <li class="nav-bar-links"><a href="faq-page.html" class="nav-bar-links"><p>FAQ</p><img src="icons/FAQ.png"></a></li>
+            <li class="nav-bar-links"><a href="contact-page.html" class="nav-bar-links"><p>CONTACT</p><img src="icons/Envelope.png"></a></li>
           </ul>
           </nav>
         </div>
         <div class="page-header-0">
-          <div class="past-event">
+          <div id="past-event">
             <h1 class="event-header">PILOT</h1>
-            <p class="event-text">LEVELS</p>
-            <img class="more-arrow" src="icons/Down.png">
+            <a onclick="openInfo()" class="info-button"><img class="more-arrow" src="icons/Down.png"></a>
+            <div id="slide-info">
+              <h3 class="slide-header">WHERE?</h1>
+              <p class="slide-text">LEVELS</p>
+              <h3 class="slide-header">PERFORMERS</h1>
+              <p class="slide-text">SORA ~ TAKI ~ O-SHUN</p>
+              <a href="" class="mobile-photos">PHOTOS</a>
+              <a href="" class="photos-btn">SEE PHOTOS</a>
+            </div>
           </div>
-          <div class="past-event">
+          <div id="past-event-0">
             <h1 class="event-header">KOI KITE FESTIVAL</h1>
-            <p class="event-text">LEVELS</p>
-            <img class="more-arrow" src="icons/Down.png">
+            <a onclick="openInfo0()" class="info-button"><img class="more-arrow" src="icons/Down.png"></a>
+            <div id="slide-info-0">
+              <h3 class="slide-header">WHERE?</h1>
+              <p class="slide-text">LEVELS</p>
+              <h3 class="slide-header">PERFORMERS</h1>
+              <p class="slide-text">NAOTO ~ TAKI ~ O-SHUN</p>
+              <a href="" class="mobile-photos">PHOTOS</a>
+              <a href="" class="photos-btn">SEE PHOTOS</a>
+            </div>
           </div>
-          <div class="past-event">
+          <div id="past-event-1">
             <h1 class="event-header">90'S NIGHT</h1>
-            <p class="event-text">LEVELS</p>
-            <img class="more-arrow" src="icons/Down.png">
+            <a onclick="openInfo1()" class="info-button"><img class="more-arrow" src="icons/Down.png"></a>
+            <div id="slide-info-1">
+              <h3 class="slide-header">WHERE?</h1>
+              <p class="slide-text">LEVELS</p>
+              <h3 class="slide-header">PERFORMERS</h1>
+              <p class="slide-text">NAOTO ~ TAKI ~ O-SHUN</p>
+              <a href="" class="mobile-photos">PHOTOS</a>
+              <a href="" class="photos-btn">SEE PHOTOS</a>
+            </div>
           </div>
-          <div class="past-event">
+          <div id="past-event-2">
             <h1 class="event-header">SUMMER FESTIVAL</h1>
-            <p class="event-text">LEVELS</p>
-            <img class="more-arrow" src="icons/Down.png">
+            <a onclick="openInfo2()" class="info-button"><img class="more-arrow" src="icons/Down.png"></a>
+            <div id="slide-info-2">
+              <h3 class="slide-header">WHERE?</h1>
+              <p class="slide-text">LEVELS</p>
+              <h3 class="slide-header">PERFORMERS</h1>
+              <p class="slide-text">NAOTO ~ TAKI ~ O-SHUN</p>
+              <a href="" class="mobile-photos">PHOTOS</a>
+              <a href="" class="photos-btn">SEE PHOTOS</a>
+            </div>
           </div>
         </div>
-        <footer id="footer">
+        <footer id="footer-test">
           <div class="columns">
             <button class="footer-buttons">BUY TICKETS</button>
             <h2 class="footer-header">SUBSCRIBE TO OUR EMAIL LIST</h2>
@@ -68,4 +103,5 @@
             </div>
           </div>
         </footer>
+        <script src="index.js"></script>
     </body>
